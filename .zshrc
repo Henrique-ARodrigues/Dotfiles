@@ -1,8 +1,8 @@
 ###########################
-# REQUIRES: starship, tmux, zsh-autosuggestions, zsh-syntax-highlighting
+# REQUIRES: tmux, zsh-autosuggestions, zsh-syntax-highlighting
 ###########################
-
-HISTFILE=~/.zsh_history
+#
+HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=2000
 WORDCHARS=${WORDCHARS//\/} 
@@ -75,16 +75,8 @@ else
 fi
 
 alias tks="tmux kill-session -t"
-alias dot='cd ~/dotfiles'
-alias vault='cd ~/vault'
-alias hs='cd ~/dev/hub-server'
-alias hw='cd ~/dev/hub-web-client'
-alias setup='~/dotfiles/setup.sh'
-alias b='~/notes/brg.sh'
-alias cal='calcurse -D ~/dev/calendar'
-alias pomo='~/dotfiles/pomo.sh'
-alias dbdev="pgcli -h $DB_DEV_HOST -p 5432 -U hub -d hubDB-dev"
-alias dbprod="pgcli -h $DB_PROD_HOST -p 5432 -U hub -d hubDB-prod"
+alias dot='cd ~/Dotfiles'
+alias bee='cd ~/beecrowd-c99'
 
 
 ###### MEMENTO MORI ######
