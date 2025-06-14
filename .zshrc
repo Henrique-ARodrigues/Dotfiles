@@ -77,6 +77,14 @@ fi
 alias tks="tmux kill-session -t"
 alias dot='cd ~/Dotfiles'
 alias bee='cd ~/beecrowd-c99'
+alias agenda='(cd ~/Agenda && ./agenda && cd ~)'
+
+
+if [[ $- == *i* ]]; then
+    cd ~/Agenda
+    ./agenda
+fi
+cd ~
 
 
 ###### MEMENTO MORI ######
